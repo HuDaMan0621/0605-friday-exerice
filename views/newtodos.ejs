@@ -1,0 +1,35 @@
+<%- include('partials/page-open.ejs'); %>
+
+<form action="/newtodo" method="POST">
+<label for="invoiceNumber">invoices</label>
+<input type ="number" name="invoiceNumber" id="invoiceNumber" />
+<label for="total">total</label>
+<input type ="float" name="total" id="total" />
+<label for="currency">USD</label>
+<input type ="text" name="currency" id="currency" />
+<label for="invoice_date">Invoice Date</label>
+<input type ="date" name="invoiceDate" id="invoiceDate" />
+<label for="vendor_name">Vendor Name</label>
+<input type ="text" name="vendorName" id="vendorName" />
+<label for="remittance_address">Remittance Address</label>
+<input type ="text" name="remittanceAddress" id="remittanceAddress" />
+
+</form>
+
+<%- include('partials/page-end.ejs'); %>
+
+
+<!-- [
+    {
+        "id": 6,
+        "invoice_number": 12345,
+        "total": "199.99",
+        "currency": "USD",
+        "invoice_data": "2019-08-17T04:00:00.000Z",
+        "due_date": "2019-09-17T04:00:00.000Z",
+        "vendor_name": "ACME Cleaners INC",
+        "remittance_address": "123 ABC ST Charlotte, NC 28209",
+        "createdAt": "2020-06-05T15:32:44.032Z",
+        "updatedAt": "2020-06-05T15:32:44.032Z"
+    }
+] -->
